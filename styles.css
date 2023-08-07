@@ -1,49 +1,45 @@
-html,
 body {
-    height: 100%;
-    font-family:"Exo 2", sans-serif;
-    line-height: 50%;
-}
-
-body {
+    font-family: 'Public Sans', sans-serif;
     margin: 0;
-}
-
-h1 {
-    font-weight: 900;
-    color: #141301;
-    font-size: 34px;
-}
-
-h2 {
-    font-weight: 400;
-    color: #141301;
-    font-size: 24px;
-}
-
-p {
-    font-weight: 400;
-    color: #141301;
-    font-size: 18px;
-}
-
-.flex-container {
-    height: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    color: black;
+  }
+  
+  header {
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+  }
+  
+  .horizontal-line {
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+  }
+  
+  .icon-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.row {
-    width: 100%;
-    padding: 20px;
-    background-color: #E5E7E6;
-
-}
-
-.flex-item {
-    color: #000000;
-    text-align: left;
-}
+    margin-top: 20px;
+  }
+  
+  .icon-container a:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  /* Add padding to the left of the icons */
+  .icon-container a {
+    padding-left: 2px;
+  }
+  
