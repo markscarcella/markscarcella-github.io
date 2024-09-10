@@ -3,7 +3,7 @@ class Spring {
     this.endA = endA;
     this.endB = endB;
     this.l0 = 100;
-    this.k = 0.01;
+    this.k = 0.001;
   }
   
   applyForce() {
@@ -23,8 +23,8 @@ class Spring {
   }
   
   show() {
-    stroke(0);
-    strokeWeight(4);
+    stroke(200);
+    strokeWeight(2);
     let direction = p5.Vector.sub(this.endB.pos, this.endA.pos);
     let distance = direction.mag();
     direction.normalize();

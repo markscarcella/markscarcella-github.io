@@ -21,7 +21,7 @@ class Node {
   applyRepulsion(other) {
     let distance = max(p5.Vector.dist(this.pos, other.pos), this.r + other.r);
     let repulsionForce = p5.Vector.sub(this.pos, other.pos);
-    let mag = 5000 / (distance * distance);
+    let mag = 1000 / (distance * distance);
     repulsionForce.setMag(mag);
     this.applyForce(repulsionForce);
     other.applyForce(repulsionForce.mult(-1));
@@ -152,6 +152,7 @@ class Node {
     fill(255); // Text color (black)
     noStroke();
     textAlign(CENTER, CENTER);
+    textFont('Courier New');
     text(this.title, this.pos.x, this.pos.y); // Center text inside the ball
   }
 }

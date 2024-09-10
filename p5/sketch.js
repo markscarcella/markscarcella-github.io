@@ -2,8 +2,10 @@ let nodes = {};
 let springs = [];
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent('p5-container');
+  let headerHeight = document.querySelector('header').offsetHeight;
+  let availableHeight = 0.9*(windowHeight - headerHeight);
+  let availableWidth = 0.9*windowWidth
+  canvas = createCanvas(max(400,availableWidth), max(400,availableHeight));
 
   nodes["Physics"]      = new Node("Physics");
   nodes["Education"]    = new Node("Education");
@@ -18,7 +20,6 @@ function setup() {
   nodes["Pinocchio"]  = new Node("Pinocchio");
   nodes["ThinkerShield"] = new Node("ThinkerShield");
   nodes["Observatory AR"] = new Node("Observatory AR");
-
 
   nodes["Physics"].connect(nodes["Education"]);
   nodes["Physics"].connect(nodes["Programming"]);
