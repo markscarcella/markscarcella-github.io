@@ -2,7 +2,7 @@ let nodes = {};
 let springs = [];
 
 function setup() {
-  createCanvas(1000, 800);
+  let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('p5-container');
 
   nodes["Physics"]      = new Node("Physics");
