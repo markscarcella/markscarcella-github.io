@@ -3,6 +3,7 @@ let springs = [];
 
 function setup() {
   createCanvas(1000, 800);
+  canvas.parent('p5-container');
 
   nodes["Physics"]      = new Node("Physics");
   nodes["Education"]    = new Node("Education");
